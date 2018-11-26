@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.2
+echo taller-de-odoo-.slack.com modified by deztino v0.3
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -53,6 +53,7 @@ echo Generando odoo.conf y Configurando
 echo =============================================
 pip3 install -r odoo/requirements.txt
 pip3 install phonenumbers
+pip3 install --user PyPDF2
 
 # Lista de es_BO, es_CL, es_PE, es_PY, es_UY, es_MX, es_VE
 odoo/odoo-bin -c odoo.conf -s --stop-after-init --db_host=localhost --db_user=odoo --db_password=odoo --addons-path=/home$OE_HOME/odoo/11/odoo/addons -d $OE_DBNAME --logfile=/home$OE_HOME/odoo/11/odoo-$OE_DBNAME.log --http-port=8069 --longpolling-port=8072 --http-interface=0.0.0.0 --data-dir=/home$OE_HOME/odoo/11/datadir --load-language=es_AR
@@ -66,5 +67,5 @@ odoo/odoo-bin -c odoo.conf &
 du -bc ./odoo | grep total
 git fetch --depth 1
 git reset --hard origin/master
-https://github.com/OCA/
-https://github.com/ingadhoc/
+#https://github.com/OCA/
+#https://github.com/ingadhoc/
