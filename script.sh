@@ -1,9 +1,11 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com
+echo taller-de-odoo-.slack.com modified by deztino v0.1
 echo =============================================
-
+OE_USER="ubuntu"
+OE_HOME="/$OE_USER"
+OE_DBNAME="sanignaciosrl"
 echo =============================================
 echo Actualizando sistema
 echo =============================================
@@ -24,7 +26,7 @@ sudo apt-get install -y postgresql postgresql-contrib
 echo =============================================
 echo Creamos ambiente y carpetas
 echo =============================================
-python3 -m venv /home/odoo/odoo/11
+python3 -m venv /home$OE_HOME/odoo/11
 cd odoo/11
 source bin/activate
 
@@ -53,7 +55,7 @@ pip3 install -r odoo/requirements.txt
 pip3 install phonenumbers
 
 # Lista de es_BO, es_CL, es_PE, es_PY, es_UY, es_MX, es_VE
-odoo/odoo-bin -c odoo.conf -s --stop-after-init --db_host=localhost --db_user=odoo --db_password=odoo --addons-path=/home/odoo/odoo/11/odoo/addons -d TALLERODOO_DB_11 --logfile=/home/odoo/odoo/11/odoo-tallerodoo.log --http-port=8069 --longpolling-port=8072 --http-interface=0.0.0.0 --data-dir=/home/odoo/odoo/11/datadir --load-language=es_AR
+odoo/odoo-bin -c odoo.conf -s --stop-after-init --db_host=localhost --db_user=odoo --db_password=odoo --addons-path=/home$OE_HOME/odoo/11/odoo/addons -d $OE_DBNAME --logfile=/home$OE_HOME/odoo/11/odoo-$OE_DBNAME.log --http-port=8069 --longpolling-port=8072 --http-interface=0.0.0.0 --data-dir=/home$OE_HOME/odoo/11/datadir --load-language=es_AR
 
 echo =============================================
 echo Levantamos Odoo v11 Localizacion Latinoamericana
