@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.3
+echo taller-de-odoo-.slack.com modified by deztino v0.4
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -34,7 +34,7 @@ echo =============================================
 echo Actualizamos pip y setuptools
 echo =============================================
 pip3 install --upgrade pip
-pip3 install --upgrade setuptools 
+pip3 install --user --upgrade setuptools 
 
 echo =============================================
 echo Clonando e instalando ODOO 
