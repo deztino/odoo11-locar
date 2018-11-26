@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.1
+echo taller-de-odoo-.slack.com modified by deztino v0.2
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -44,9 +44,9 @@ git clone --depth 1 --branch 11.0 --single-branch https://www.github.com/odoo/od
 echo =============================================
 echo Creando usuario Postgres
 echo =============================================
-sudo -u postgres psql -c "CREATE USER odoo WITH PASSWORD 'odoo';"
-sudo -u postgres psql -c "ALTER USER odoo WITH PASSWORD 'odoo';"
-sudo -u postgres psql -c "ALTER ROLE odoo WITH CREATEDB;"
+sudo -u postgres psql -c "CREATE USER $OE_USER WITH PASSWORD '$OE_USER';"
+sudo -u postgres psql -c "ALTER USER $OE_USER WITH PASSWORD '$OE_USER';"
+sudo -u postgres psql -c "ALTER ROLE $OE_USER WITH CREATEDB;"
 
 echo =============================================
 echo Generando odoo.conf y Configurando
