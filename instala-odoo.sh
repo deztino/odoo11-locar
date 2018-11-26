@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.5
+echo taller-de-odoo-.slack.com modified by deztino v0.6
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -27,7 +27,9 @@ echo =============================================
 echo Creamos ambiente y carpetas
 echo =============================================
 python3 -m venv /home$OE_HOME/odoo/11
-cd odoo/11
+echo Cambiamos de directorio
+cd /home$OE_HOME/odoo/11
+echo Activamos Ambiente
 source bin/activate
 
 echo =============================================
