@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 002
 echo Instalando localizacion Argentina
-echo taller-de-odoo-.slack.com Modified by Deztino v0.1
+echo taller-de-odoo-.slack.com Modified by Deztino v0.3
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -16,6 +16,21 @@ echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo =============================================
 git clone https://github.com/OCA/maintainer-quality-tools.git
+pip3 install --user M2Crypto
+pip3 install --user httplib2
+pip3 install --user checksumdir
+pip3 install --user pysftp
+pip3 install --user IPy
+pip3 install --user lasso
+pip3 install --user delorean
+pip3 install --user schema
+pip3 install --user humanize
+pip3 install --user tzlocal
+pip3 install --user bokeh
+pip3 install --user PyYAML
+pip3 install --user bkcharts
+pip3 install --user tornado
+pip3 install --user pycups
 
 echo =============================================
 echo Clonando repositorios localizacion Argentina
