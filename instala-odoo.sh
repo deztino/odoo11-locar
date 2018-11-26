@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.7
+echo taller-de-odoo-.slack.com modified by deztino v0.8
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -67,10 +67,3 @@ echo =============================================
 echo Levantamos Odoo v11 Localizacion Latinoamericana
 echo =============================================
 odoo/odoo-bin -c odoo.conf &
-
-------
-du -bc ./odoo | grep total
-git fetch --depth 1
-git reset --hard origin/master
-#https://github.com/OCA/
-#https://github.com/ingadhoc/
