@@ -1,5 +1,10 @@
 echo Instalando dependencias para una instalacion desde Script Yenthe666
 echo
+echo Actualizando repositorios...
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get upgrade
+echo Instalando librerias Python3 (PIP3)...
 pip3 install pycups
 pip3 install --user Genshi
 echo comment sudo nano genshi
