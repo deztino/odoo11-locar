@@ -1,6 +1,6 @@
-##############
-## COLOCAR sudo chmod +x /odoo11-locar/*
-## LUEGO   cd odoo11-locar
+##############################################
+## PRIMERO cd odoo11-locar
+## COLOCAR sudo chmod +x *
 ## LUEGO   sudo ./yenthe-pre-adhoc-deps-odoo.sh
 echo Instalando dependencias para una instalacion desde Script Yenthe666
 echo
