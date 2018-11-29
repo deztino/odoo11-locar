@@ -17,13 +17,34 @@ echo Instalando dependencia DiskUtils para ejecutar instalacion de PIP...
 sudo apt-get update
 sudo apt-get install python3-distutils
 echo
+echo #######################################
 echo Instalando PIP...
+echo #######################################
+echo
 python3 setup.py
-echo Actualizando repositorios...
+echo
+echo #######################################
+echo Ejecutando: sudo add-apt-repositoy universe ...
+echo #######################################
+echo
 sudo add-apt-repository universe
+echo
+echo #######################################
+echo Ejecutando: sudo apt-get update ...
+echo #######################################
+echo
 sudo apt-get update
+echo
+echo #######################################
+echo Ejecutando: sudo apt-get upgrade ...
+echo #######################################
+echo
 sudo apt-get upgrade
+echo
+echo #######################################
 echo Instalando librerias Python3 (PIP3)...
+echo #######################################
+echo
 pip3 install pycups
 pip3 install --user Genshi
 echo comment sudo nano genshi
