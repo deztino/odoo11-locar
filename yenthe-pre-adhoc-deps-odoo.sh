@@ -14,13 +14,13 @@ pip3 install --user numpy
 echo comment sudo nano sources/ingadhoc-website/requirements.txt numpy
 pip3 install --user fdfgen
 echo cooment sudo nano sources/reporting-engine/requirements.txt
-echo instalando paq1...
+echo Instalando zpl2, checksumdir, raven, pysftp, acme_tiny e IPy ...
 pip3 install --user zpl2 checksumdir raven pysftp acme_tiny IPy
 pip3 install --user pyopenssl
 pip3 install --user httplib2==0.9.2
 pip3 install --user pysimplesoap
 pip3 install --user git+https://github.com/urbina05/pyafipws@patch-2
-echo comment sudo nano
+echo comment sudo nano git+https://github.com/urbina05/pyafipws@patch-2
 pip3 install --user pygments
 pip3 install --user dnspython
 pip3 install --user email_validator
@@ -31,7 +31,7 @@ pip3 install --user tornado
 pip3 install --user bkcharts==0.2
 pip3 install --user bokeh==0.12.7
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
-echo comment suda nano
+echo comment suda nano git+https://github.com/OCA/openupgradelib/@master
 
 
 
