@@ -1,8 +1,8 @@
 ##############################################
 ## PRIMERO cd odoo11-locar
 ## COLOCAR sudo chmod +x *
-## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc-deps
-## deztino Pre-Odoo adhoc dependencyes Installer v0.1
+## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
+## deztino Pre-Odoo adhoc dependencyes Installer v0.2
 echo Instalando dependencias para una instalacion desde Script Yenthe666
 echo Cambiando de directorio ...
 echo cd ..
@@ -30,7 +30,7 @@ sudo apt-get install python3-distutils
 echo Listo!
 echo Instalando PIP...
 echo python3 setup.py ...
-python3 setup.py
+sudo python3 setup.py
 echo Listo!
 echo Agregarndo repositorio: universe ...
 echo sudo add-apt-repository universe ...
