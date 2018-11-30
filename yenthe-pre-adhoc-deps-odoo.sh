@@ -42,7 +42,9 @@ echo #######################################
 echo Ejecutando: sudo apt-get upgrade ...
 echo ##################################################
 echo .
+echo sudo apt-get upgrade ...
 sudo apt-get upgrade
+echo Listo!
 echo .
 echo ##################################################
 echo Seccion de Instalacion de librerias Python3 (PIP3)
@@ -54,10 +56,13 @@ echo ##################################################
 echo .
 echo sudo apt-get install libcups2-dev ...
 sudo apt-get install libcups2-dev
+echo Listo!
 echo sudo apt-get install cups ...
 sudo apt-get install cups
+echo Listo!
 echo sudo apt-get install python3-dev ...
 sudo apt-get install python3-dev
+echo Listo!
 echo.
 echo ##################################################
 echo Ejecutando: pip3 install pycups
@@ -65,8 +70,10 @@ echo ##################################################
 echo .
 echo pip3 install --user pycups ...
 pip3 install --user pycups
+echo Listo!
 echo pip3 install --user Genshi ...
 pip3 install --user Genshi
+echo Listo!
 echo NOW YOU SHOULD comment sudo nano genshi
 echo pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
