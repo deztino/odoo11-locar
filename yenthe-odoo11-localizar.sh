@@ -1,8 +1,8 @@
-# TO RUN: sudo -H -E ./yenthe-odoo11-localizar.sh
+# TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
 echo =============================================
 echo Taller de Odoo 002
 echo Instalando localizacion Argentina
-echo taller-de-odoo-.slack.com Modified by Deztino v0.5
+echo taller-de-odoo-.slack.com Modified by Deztino v0.6
 echo =============================================
 OE_USER="edu"
 OE_HOME="/$OE_USER"
