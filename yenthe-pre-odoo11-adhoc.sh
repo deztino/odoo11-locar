@@ -125,7 +125,7 @@ echo Instalando módulo: bokeh V.0.12.7 ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo sudo -H pip3 install --user bokeh==0.12.7
 sudo -H pip3 install --user bokeh==0.12.7
-echo Listo! (check Warnings)
+printf "\033[1;31mListo! --CHECK WARNINGS--\033[0m\n"
 echo @@@@@@
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
 printf "\033[1;31mcomment: suda nano git+https://github.com/OCA/openupgradelib/@master\033[0m\n"
