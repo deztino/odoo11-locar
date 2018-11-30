@@ -17,36 +17,47 @@ echo Instalando dependencia DiskUtils para ejecutar instalacion de PIP...
 sudo apt-get update
 sudo apt-get install python3-distutils
 echo
-echo #######################################
+echo ##################################################
 echo Instalando PIP...
-echo #######################################
+echo ##################################################
 echo
 python3 setup.py
 echo
-echo #######################################
+echo ##################################################
 echo Ejecutando: sudo add-apt-repositoy universe ...
-echo #######################################
+echo ##################################################
 echo
 sudo add-apt-repository universe
 echo
-echo #######################################
+echo ##################################################
 echo Ejecutando: sudo apt-get update ...
-echo #######################################
+echo ##################################################
 echo .
 sudo apt-get update
 echo .
 echo #######################################
 echo Ejecutando: sudo apt-get upgrade ...
-echo #######################################
+echo ##################################################
 echo .
 sudo apt-get upgrade
 echo .
-echo #######################################
-echo Instalando librerias Python3 (PIP3)...
-echo #######################################
+echo ##################################################
+echo Seccion de Instalacion de librerias Python3 (PIP3)
+echo ##################################################
 echo .
+echo ##################################################
+echo Instalando dependencias para pycups ...
+echo sudo apt-get install libcups2-dev
+echo ##################################################
+echo .
+sudo apt-get install libcups2-dev
+echo .
+echo ##################################################
 echo Ejecutando: pip3 install pycups
+echo ##################################################
+echo .
 pip3 install pycups
+echo Instalando Genshi ...
 pip3 install --user Genshi
 echo comment sudo nano genshi
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
