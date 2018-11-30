@@ -47,19 +47,22 @@ echo ##################################################
 echo .
 echo ##################################################
 echo Instalando dependencias para pycups ...
-echo sudo apt-get install libcups2-dev
 echo ##################################################
 echo .
+echo sudo apt-get install libcups2-dev ...
 sudo apt-get install libcups2-dev
-echo .
+echo sudo apt-get install cups ...
+sudo apt-get install cups
 echo ##################################################
 echo Ejecutando: pip3 install pycups
 echo ##################################################
 echo .
+echo pip3 install pycups ...
 pip3 install pycups
-echo Instalando Genshi ...
+echo pip3 install --user Genshi ...
 pip3 install --user Genshi
-echo comment sudo nano genshi
+echo NOW YOU SHOULD comment sudo nano genshi
+echo pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
 pip3 install --user git+https://github.com/aeroo/currency2text.git
 pip3 install --user numpy
