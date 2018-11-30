@@ -1,3 +1,4 @@
+# TO RUN: sudo -H -E ./yenthe-odoo11-localizar.sh
 echo =============================================
 echo Taller de Odoo 002
 echo Instalando localizacion Argentina
@@ -10,7 +11,13 @@ echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo =============================================
 git clone https://github.com/OCA/maintainer-quality-tools.git
+echo Dependencias para M2Crypto:
+echo sudo apt-get install build-essential python3-dev python-dev libssl-dev swig ...
+sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
+echo Listo!
+echo M2Crypto ...
 pip3 install --user M2Crypto
+echo Listo!
 pip3 install --user httplib2
 pip3 install --user checksumdir
 pip3 install --user pysftp
@@ -25,6 +32,9 @@ pip3 install --user PyYAML
 pip3 install --user bkcharts
 pip3 install --user tornado
 pip3 install --user zpl2
+echo Instalar modulo: Request
+sudo -H pip3 install --user request
+echo Listo!
 sudo apt-get install libcups2-dev
 pip3 install --user pycups
 
