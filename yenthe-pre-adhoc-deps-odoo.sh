@@ -20,15 +20,18 @@ echo
 echo ##################################################
 echo Instalando PIP...
 echo ##################################################
-echo
+echo .
+echo python3 setup.py ...
 python3 setup.py
-echo
+echo Listo!
+echo .
 echo ##################################################
 echo Ejecutando: sudo add-apt-repositoy universe ...
 echo ##################################################
-echo
+echo .
+echo sudo add-apt-repository universe ...
 sudo add-apt-repository universe
-echo
+echo .
 echo ##################################################
 echo Ejecutando: sudo apt-get update ...
 echo ##################################################
