@@ -32,19 +32,20 @@ echo
 echo #######################################
 echo Ejecutando: sudo apt-get update ...
 echo #######################################
-echo
+echo .
 sudo apt-get update
-echo
+echo .
 echo #######################################
 echo Ejecutando: sudo apt-get upgrade ...
 echo #######################################
-echo
+echo .
 sudo apt-get upgrade
-echo
+echo .
 echo #######################################
 echo Instalando librerias Python3 (PIP3)...
 echo #######################################
-echo
+echo .
+echo Ejecutando: pip3 install pycups
 pip3 install pycups
 pip3 install --user Genshi
 echo comment sudo nano genshi
