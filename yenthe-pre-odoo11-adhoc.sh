@@ -4,7 +4,7 @@
 ## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
 ## deztino Pre-Odoo adhoc dependencyes
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.9
+echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 1.0
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo Cambiando de directorio ...
 echo ~cd ..
@@ -80,27 +80,33 @@ echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo ~sudo apt-get install libcups2-dev ...
 sudo apt-get install libcups2-dev
 echo -Listo!
+echo
 echo ~sudo apt-get install cups ...
 sudo apt-get install cups
 echo -Listo!
 echo ~sudo apt-get install python3-dev ...
 sudo apt-get install python3-dev
 echo -Listo!
+echo
 echo Instalando pycups ...
 echo ~pip3 install --user pycups ...
 pip3 install --user pycups
 echo -Listo!
+echo
 echo Instalando genshi ...
 echo ~pip3 install --user Genshi ...
 pip3 install --user Genshi
 echo -Listo!
+echo
 printf "\033[1;31mNOW YOU SHOULD comment sudo nano genshi\033[0m\n"
 echo ~pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
-echo Listo!
+echo -Listo!
+echo
 echo pip3 install --user git+https://github.com/aeroo/currency2text.git ...
 pip3 install --user git+https://github.com/aeroo/currency2text.git
-echo Listo!
+echo -Listo!
+echo
 pip3 install --user numpy
 printf "\033[1;31mcomment sudo nano sources/ingadhoc-website/requirements.txt numpy\033[0m\n"
 pip3 install --user fdfgen
@@ -124,7 +130,7 @@ echo Instalando módulo: bokeh V.0.12.7 ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo sudo -H pip3 install --user bokeh==0.12.7
 sudo -H pip3 install --user bokeh==0.12.7
-printf "\033[1;31mListo! --CHECK WARNINGS--\033[0m\n"
-echo @@@@@@
+printf "\033[1;31m-Listo! --CHECK WARNINGS--\033[0m\n"
+echo
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
 printf "\033[1;31mcomment: suda nano git+https://github.com/OCA/openupgradelib/@master\033[0m\n"
