@@ -32,12 +32,17 @@ pip3 install --user PyYAML
 pip3 install --user bkcharts
 pip3 install --user tornado
 pip3 install --user zpl2
+echo Instalar PySimpleSoap
+echo sudo -H pip3 install --user git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k ...
+sudo -H pip3 install --user git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k
+echo Listo!
 echo Instalar modulo: Request
 sudo -H pip3 install --user request
 echo Listo!
 sudo apt-get install libcups2-dev
+echo Instalar PyCups
 pip3 install --user pycups
-
+echo Listo!
 echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo ==============================================
