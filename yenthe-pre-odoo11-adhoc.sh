@@ -4,83 +4,97 @@
 ## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
 ## deztino Pre-Odoo adhoc dependencyes
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.6
+echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.7
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo Cambiando de directorio ...
 echo @@@@@@
-echo cd ..
+echo >cd ..
 echo @@@@@@
 cd ..
-echo Listo!
+echo -Listo!
 echo @@@@@@
+echo _____________________________________________________________________________________________________________________
 echo Modificando permisos de directorio: odoo11-locar a 777 ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo chmod 777 odoo11-locar ...
+echo >sudo chmod 777 odoo11-locar ...
 sudo chmod 777 odoo11-locar
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Entrando al directorio ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo cd odoo11-locar
+echo >cd odoo11-locar
 cd odoo11-locar
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Actualizando apt-get ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo apt-get update ...
+echo >sudo apt-get update ...
 sudo apt-get update
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Instalando DistUtils -dependencia para instalar PIP- ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo apt-get install python-distutils ...
+echo >sudo apt-get install python-distutils ...
 sudo apt-get install python3-distutils
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Bajando PIP ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py ...
+echo >sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py ...
 sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-echo Listo!
-ls -ltr
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
+echo Listando directorio ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+echo >ls -ltr
+ls -ltr
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Instalando PIP...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo python3 setup.py ...
+echo >python3 setup.py ...
 sudo -H python3 get-pip.py
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Agregando repositorio: universe ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo add-apt-repository universe ...
+echo >sudo add-apt-repository universe ...
 sudo add-apt-repository universe
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Actualizando Apt-Get:
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo apt-get update ...
+echo >sudo apt-get update ...
 sudo apt-get update
-echo Listo!
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
 echo Upgradeando Apt-Get a ultima version ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo apt-get upgrade ...
+echo >sudo apt-get upgrade ...
 sudo apt-get upgrade
-echo Listo!
-echo Instalación de librerias Python3 PIP3
-echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+echo -Listo!
+echo _____________________________________________________________________________________________________________________
+echo Inicio de instalación de librerias: Python3 PIP3
+echo _____________________________________________________________________________________________________________________
 echo Instalando dependencias para pycups ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo sudo apt-get install libcups2-dev ...
+echo >sudo apt-get install libcups2-dev ...
 sudo apt-get install libcups2-dev
-echo Listo!
-echo sudo apt-get install cups ...
+echo -Listo!
+echo >sudo apt-get install cups ...
 sudo apt-get install cups
-echo Listo!
+echo -Listo!
 echo sudo apt-get install python3-dev ...
 sudo apt-get install python3-dev
-echo Listo!
+echo -Listo!
 echo Instalando pycups ...
 echo pip3 install --user pycups ...
 pip3 install --user pycups
-echo Listo!
+echo -Listo!
 echo Instalando genshi ...
 echo pip3 install --user Genshi ...
 pip3 install --user Genshi
-echo Listo!
+echo -Listo!
 echo NOW YOU SHOULD comment sudo nano genshi
 echo pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
