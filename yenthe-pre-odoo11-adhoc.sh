@@ -4,7 +4,7 @@
 ## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
 ## deztino Pre-Odoo adhoc dependencyes
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.7
+echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.8
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo Cambiando de directorio ...
 echo @@@@@@
@@ -95,7 +95,7 @@ echo Instalando genshi ...
 echo pip3 install --user Genshi ...
 pip3 install --user Genshi
 echo -Listo!
-echo NOW YOU SHOULD comment sudo nano genshi
+printf "\033[1;31mNOW YOU SHOULD comment sudo nano genshi\033[0m\n"
 echo pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
 echo Listo!
@@ -103,9 +103,9 @@ echo pip3 install --user git+https://github.com/aeroo/currency2text.git ...
 pip3 install --user git+https://github.com/aeroo/currency2text.git
 echo Listo!
 pip3 install --user numpy
-echo comment sudo nano sources/ingadhoc-website/requirements.txt numpy
+printf "\033[1;31mcomment sudo nano sources/ingadhoc-website/requirements.txt numpy\033[0m\n"
 pip3 install --user fdfgen
-echo cooment sudo nano sources/reporting-engine/requirements.txt
+printf "\033[1;31mcomment sudo nano sources/reporting-engine/requirements.txt\033[0m\n"
 echo Instalando zpl2, checksumdir, raven, pysftp, acme_tiny e IPy ...
 pip3 install --user zpl2 checksumdir raven pysftp acme_tiny IPy
 pip3 install --user pyopenssl
@@ -128,7 +128,7 @@ sudo -H pip3 install --user bokeh==0.12.7
 echo Listo! (check Warnings)
 echo @@@@@@
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
-echo comment suda nano git+https://github.com/OCA/openupgradelib/@master
+printf "\033[1;31mcomment: suda nano git+https://github.com/OCA/openupgradelib/@master\033[0m\n"
 
 
 
