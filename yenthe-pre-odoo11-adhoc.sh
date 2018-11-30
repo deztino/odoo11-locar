@@ -4,7 +4,7 @@
 ## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
 ## deztino Pre-Odoo adhoc dependencyes
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.5
+echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 0.6
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo Cambiando de directorio ...
 echo @@@@@@
@@ -107,7 +107,12 @@ pip3 install --user lasso
 pip3 install --user pyotp
 pip3 install --user tornado
 pip3 install --user bkcharts==0.2
-pip3 install --user bokeh==0.12.7
+echo Instalando módulo: bokeh V.0.12.7 ...
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+echo sudo -H pip3 install --user bokeh==0.12.7
+sudo -H pip3 install --user bokeh==0.12.7
+echo Listo! (check Warnings)
+echo @@@@@@
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
 echo comment suda nano git+https://github.com/OCA/openupgradelib/@master
 
