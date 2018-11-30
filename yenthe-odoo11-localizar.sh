@@ -16,7 +16,7 @@ echo sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
 sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
 echo Listo!
 echo M2Crypto ...
-pip3 install --user M2Crypto
+sudo -H pip3 install --user M2Crypto
 echo Listo!
 pip3 install --user httplib2
 pip3 install --user checksumdir
