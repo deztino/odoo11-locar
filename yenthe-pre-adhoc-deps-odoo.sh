@@ -3,61 +3,59 @@
 ## COLOCAR sudo chmod +x *
 ## LUEGO   sudo ./yenthe-pre-adhoc-deps-odoo.sh
 echo Instalando dependencias para una instalacion desde Script Yenthe666
-echo
-echo Cambiando de directorio...
+echo Cambiando de directorio ...
+echo cd ..
 cd ..
-echo Modificando permisos de directorio: odoo11-locar a 777...
+echo Listo!
+echo Modificando permisos de directorio: odoo11-locar a 777 ...
+echo sudo chmod 777 odoo11-locar ...
 sudo chmod 777 odoo11-locar
-echo Entrando al directorio...
+echo Listo!
+echo Entrando al directorio ...
+echo cd odoo11-locar
 cd odoo11-locar
-echo Ejecutando comando como administrador sudo curl -sS https://bootstrap.pypa.io/get-pip.py >>setup.py...
+echo Listo!
+echo Bajando PIP ...
+echo sudo curl -sS https://bootstrap.pypa.io/get-pip.py >>setup.py ...
 sudo curl -sS https://bootstrap.pypa.io/get-pip.py >>setup.py
-echo
-echo Instalando dependencia DiskUtils para ejecutar instalacion de PIP...
+echo Listo!
+echo Instalando dependencia DiskUtils para ejecutar instalacion de PIP ...
 echo sudo apt-get update ...
 sudo apt-get update
 echo Listo!
 echo sudo apt-get install python-distutils ...
 sudo apt-get install python3-distutils
 echo Listo!
-echo .
 echo ##################################################
 echo Instalando PIP...
 echo ##################################################
-echo .
 echo python3 setup.py ...
 python3 setup.py
 echo Listo!
-echo .
 echo ##################################################
 echo Ejecutando: sudo add-apt-repositoy universe ...
 echo ##################################################
-echo .
 echo sudo add-apt-repository universe ...
 sudo add-apt-repository universe
-echo .
+echo Listo!
 echo ##################################################
-echo Ejecutando: sudo apt-get update ...
+echo Actualizando Apt-Get:
 echo ##################################################
-echo .
+echo sudo apt-get update ...
 sudo apt-get update
-echo .
-echo #######################################
-echo Ejecutando: sudo apt-get upgrade ...
+echo Listo!
 echo ##################################################
-echo .
+echo Upgradeando Apt-Get a ultima version ...
+echo ##################################################
 echo sudo apt-get upgrade ...
 sudo apt-get upgrade
 echo Listo!
-echo .
 echo ##################################################
 echo Seccion de Instalación de librerias Python3 PIP3
 echo ##################################################
-echo .
 echo ##################################################
 echo Instalando dependencias para pycups ...
 echo ##################################################
-echo .
 echo sudo apt-get install libcups2-dev ...
 sudo apt-get install libcups2-dev
 echo Listo!
@@ -67,11 +65,9 @@ echo Listo!
 echo sudo apt-get install python3-dev ...
 sudo apt-get install python3-dev
 echo Listo!
-echo.
 echo ##################################################
 echo Ejecutando: pip3 install pycups
 echo ##################################################
-echo .
 echo pip3 install --user pycups ...
 pip3 install --user pycups
 echo Listo!
@@ -82,7 +78,9 @@ echo NOW YOU SHOULD comment sudo nano genshi
 echo pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
 echo Listo!
+echo pip3 install --user git+https://github.com/aeroo/currency2text.git ...
 pip3 install --user git+https://github.com/aeroo/currency2text.git
+echo Listo!
 pip3 install --user numpy
 echo comment sudo nano sources/ingadhoc-website/requirements.txt numpy
 pip3 install --user fdfgen
