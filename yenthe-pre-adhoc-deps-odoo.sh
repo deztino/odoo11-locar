@@ -14,9 +14,13 @@ echo Ejecutando comando como administrador sudo curl -sS https://bootstrap.pypa.
 sudo curl -sS https://bootstrap.pypa.io/get-pip.py >>setup.py
 echo
 echo Instalando dependencia DiskUtils para ejecutar instalacion de PIP...
+echo sudo apt-get update ...
 sudo apt-get update
+echo Listo!
+echo sudo apt-get install python-distutils ...
 sudo apt-get install python3-distutils
-echo
+echo Listo!
+echo .
 echo ##################################################
 echo Instalando PIP...
 echo ##################################################
@@ -47,7 +51,7 @@ sudo apt-get upgrade
 echo Listo!
 echo .
 echo ##################################################
-echo Seccion de Instalacion de librerias Python3 (PIP3)
+echo Seccion de Instalación de librerias Python3 PIP3
 echo ##################################################
 echo .
 echo ##################################################
@@ -77,6 +81,7 @@ echo Listo!
 echo NOW YOU SHOULD comment sudo nano genshi
 echo pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods ...
 pip3 install --user git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
+echo Listo!
 pip3 install --user git+https://github.com/aeroo/currency2text.git
 pip3 install --user numpy
 echo comment sudo nano sources/ingadhoc-website/requirements.txt numpy
