@@ -2,7 +2,7 @@
 ## PRIMERO cd odoo11-locar
 ## COLOCAR sudo chmod +x *
 ## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
-## deztino Pre-Odoo adhoc dependencyes Installer v0.2
+## deztino Pre-Odoo adhoc dependencyes Installer v0.3
 echo #####################################################################################################################
 echo Instalando dependencias para una instalacion desde Script Yenthe666
 echo #####################################################################################################################
