@@ -1,7 +1,6 @@
 # odoo11-locar
-echo Arrancador VERSION 0.2
+echo Arrancador deZtino Odoo Argentina Instalador VERSION 0.4
 sudo git clone https://github.com/deztino/odoo11-locar.git
 cd odoo11-locar
 sudo chmod +x *
-# OJO !!! NO USAR SUDO !!!
-./yenthe-pre-odoo11-adhoc.sh
+sudo -H ./yenthe-odoo11-1ero-install.sh
