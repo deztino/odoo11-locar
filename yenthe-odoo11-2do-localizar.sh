@@ -1,6 +1,6 @@
 ## OJO !!! NO USAR SUDO PARA EJECUTAR !!
 ## TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
-echo ================= SCRIPT DE LOCALIZACION deztino V. 0.9 ============================
+echo ================= SCRIPT DE LOCALIZACION deztino V. 1.0 ============================
 echo
 echo 
 echo
@@ -66,6 +66,12 @@ echo Instalando modulo: PyCups ...
 echo ~pip3 install --user pycups
 pip3 install --user pycups
 echo Listo!
+echo
+echo ___________________________________________________________________________________________________________________
+echo Instalando modulo: AerooLib ...
+echo ~sudo -H pip3 install --user git+https://github.com/adhoc-dev/aeroolib.git
+sudo -H pip3 install --user git+https://github.com/adhoc-dev/aeroolib.git
+echo -Listo!
 echo
 echo Descargado archivo "oca_dependencies.txt"
 echo ==============================================
