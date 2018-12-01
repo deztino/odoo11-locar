@@ -1,6 +1,6 @@
 ## OJO !!! NO USAR SUDO PARA EJECUTAR !!
 ## TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
-echo ================= SCRIPT DE LOCALIZACION deztino V. 1.0 ============================
+echo ================= SCRIPT DE LOCALIZACION deztino V. 1.1 ============================
 echo
 echo 
 echo
@@ -18,7 +18,7 @@ echo
 echo ___________________________________________________________________________________________________________________
 echo Instalando Dependencias para M2Crypto:
 echo ___________________________________________________________________________________________________________________
-echo ~sudo apt-get install build-essential python3-dev python-dev libssl-dev swig ...
+echo ~sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
 sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
 echo -Listo!
 echo
@@ -86,17 +86,27 @@ sed -i 's/ingadhoc-enterp/#ingadhoc-enterp/g' ./oca_dependencies.txt
 sed -i 's/ingadhoc-adhoc-/#ingadhoc-adhoc-/g' ./oca_dependencies.txt
 echo -Listo!
 echo
-echo Modificando archivo "clone_oca_dependencies"
+echo Modificando archivo "clone_oca_dependencies": Cambiando v8.0 x 11.0
 echo =============================================
 echo ~sed -i 's/8.0/11.0/g' ./maintainer-quality-tools/travis/clone_oca_dependencies
 sed -i 's/8.0/11.0/g' ./maintainer-quality-tools/travis/clone_oca_dependencies
 echo -Listo!
 echo
+echo Modificando archivo "clone_oca_dependencies": Corrigiendo pip x pip3
+echo =============================================
+echo ~sed -i 's/command = ['pip/command = ['pip3/g' ./maintainer-quality-tools/travis/clone_oca_dependencies
+echo sed -i 's/command = ['pip/command = ['pip3/g' ./maintainer-quality-tools/travis/clone_oca_dependencies
+echo -Listo!
+echo
 echo Creando directorio "sources"
 echo =============================================
+echo ~mkdir sources
 mkdir sources
 echo -Listo!
-echo Ejecutando CLONACION.
+echo
+echo Ejecutando CLONACION
+echo =============================================
+echo ./maintainer-quality-tools/travis/clone_oca_dependencies sources/ .
 ./maintainer-quality-tools/travis/clone_oca_dependencies sources/ .
 echo -Listo!
 echo
