@@ -40,8 +40,8 @@ echo -Listo!
 echo =============================================
 echo Actualizamos pip y setuptools
 echo =============================================
-pip3 install --upgrade pip
-pip3 install --user --upgrade setuptools 
+sudo -H pip3 install --upgrade pip
+sudo -H pip3 install --user --upgrade setuptools 
 sudo -H pip3 install --user PyPDF2
 sudo -H pip3 install --user werkzeug
 sudo -H pip3 install --user python-dateutil
