@@ -1,6 +1,9 @@
-## OJO !!! NO USAR SUDO PARA EJECUTAR !!! - SCRIPT LOCALIZACION 0.7
+## OJO !!! NO USAR SUDO PARA EJECUTAR !!
 ## TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
 echo ================= SCRIPT DE LOCALIZACION deztino V. 0.7 ============================
+echo
+echo 
+echo
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
 OE_DBNAME="admin"
