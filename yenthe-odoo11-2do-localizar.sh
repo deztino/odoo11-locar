@@ -1,6 +1,6 @@
 ## OJO !!! NO USAR SUDO PARA EJECUTAR !!
 ## TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
-echo ================= SCRIPT DE LOCALIZACION deztino V. 0.8 ============================
+echo ================= SCRIPT DE LOCALIZACION deztino V. 0.9 ============================
 echo
 echo 
 echo
@@ -67,32 +67,37 @@ echo ~pip3 install --user pycups
 pip3 install --user pycups
 echo Listo!
 echo
-echo =============================================
-echo Clonando repositorios localizacion Argentina
+echo Descargado archivo "oca_dependencies.txt"
 echo ==============================================
+echo ~wget https://github.com/ingadhoc/demo/raw/11.0/oca_dependencies.txt
 wget https://github.com/ingadhoc/demo/raw/11.0/oca_dependencies.txt
+echo -Listo!
+echo
+echo Editando archivo de texto "oca_dependencies.txt" ...
+echo =============================================
 sed -i 's/odoo-enterprise/#odoo-enterprise/g' ./oca_dependencies.txt
 sed -i 's/ingadhoc-enterp/#ingadhoc-enterp/g' ./oca_dependencies.txt
 sed -i 's/ingadhoc-adhoc-/#ingadhoc-adhoc-/g' ./oca_dependencies.txt
-
+echo -Listo!
+echo
+echo Modificando archivo "clone_oca_dependencies"
 echo =============================================
-echo Modificando la version de Odoo a clonar
-echo =============================================
+echo ~sed -i 's/8.0/11.0/g' ./maintainer-quality-tools/travis/clone_oca_dependencies
 sed -i 's/8.0/11.0/g' ./maintainer-quality-tools/travis/clone_oca_dependencies
-
-echo =============================================
-echo Bajando los modulos y sus dependencias
+echo -Listo!
+echo
+echo Creando directorio "sources"
 echo =============================================
 mkdir sources
+echo -Listo!
+echo Ejecutando CLONACION.
 ./maintainer-quality-tools/travis/clone_oca_dependencies sources/ .
-
-echo =============================================
+echo -Listo!
+echo
 echo Borrando la DB, para generarla nuevamente
 echo =============================================
 #Delete db
 #sudo -u postgres dropdb $OE_DBNAME
-
-echo =============================================
 echo Generando odoo.conf nuevamente con los nuevos modulos
 echo La lista de --addons-path= la generamos con el comando siguiente;
 echo find /home$OE_HOME/odoo11-locar/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ','
