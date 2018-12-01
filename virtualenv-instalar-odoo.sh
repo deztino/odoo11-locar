@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.9
+echo taller-de-odoo-.slack.com modified by deztino v1.0
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -10,34 +10,39 @@ echo =============================================
 echo Actualizando sistema
 echo =============================================
 sudo add-apt-repository universe
+echo ~sudo apt-get update
 sudo apt-get update
 sudo apt-get upgrade
-
+echo -Listo!
 echo =============================================
 echo Instalando VirtualEnv
 echo =============================================
 sudo apt-get install python3.6-dev python3.6-venv python3-pip python3-libxml2 libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libssl-dev swig wkhtmltopdf nodejs node-clean-css node-less 
-
+echo -Listo!
 echo =============================================
 echo Instalando PostgreSQL
 echo =============================================
 sudo apt-get install -y postgresql postgresql-contrib
-
+echo -Listo!
 echo =============================================
 echo Creamos ambiente y carpetas
 echo =============================================
 python3 -m venv /home$OE_HOME/odoo/11
+echo -Listo!
 echo Cambiamos de directorio
 cd /home$OE_HOME/odoo/11
+echo -Listo!
 echo Activamos Ambiente
 source bin/activate
-
+echo -Listo!
 echo =============================================
 echo Actualizamos pip y setuptools
 echo =============================================
 pip3 install --upgrade pip
 pip3 install --user --upgrade setuptools 
 sudo -H pip3 install --user PyPDF2
+sudo -H pip3 install --user werkzeug
+echo -Listo!
 echo =============================================
 echo Clonando e instalando ODOO 
 echo =============================================
