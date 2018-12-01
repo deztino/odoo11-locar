@@ -4,7 +4,7 @@
 ## LUEGO   sudo -E ./yenthe-pre-odoo11-adhoc
 ## deztino Pre-Odoo adhoc dependencyes
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 1.0
+echo INICIO - Instalando dependencias para una instalacion desde Script Yenthe666   -----  VERSION 1.0 ----- INICIANDO ...
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo Cambiando de directorio ...
 echo ~cd ..
@@ -136,5 +136,5 @@ echo
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
 printf "\033[1;31mcomment: suda nano git+https://github.com/OCA/openupgradelib/@master\033[0m\n"
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-echo FIN - Dependencias para una instalacion desde Script Yenthe666   -----  VERSION 1.0 ----- TERMINADO
+echo FIN - Dependencias para una instalacion desde Script Yenthe666   -----  VERSION 1.0 ----- TERMINADO.
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
