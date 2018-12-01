@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v0.8
+echo taller-de-odoo-.slack.com modified by deztino v0.9
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -37,7 +37,7 @@ echo Actualizamos pip y setuptools
 echo =============================================
 pip3 install --upgrade pip
 pip3 install --user --upgrade setuptools 
-
+sudo -H pip3 install --user PyPDF2
 echo =============================================
 echo Clonando e instalando ODOO 
 echo =============================================
@@ -55,7 +55,6 @@ echo Generando odoo.conf y Configurando
 echo =============================================
 pip3 install -r odoo/requirements.txt
 pip3 install --user phonenumbers
-pip3 install --user PyPDF2
 pip3 install --user passlib
 pip3 install --user pytz
 pip3 install --user babel
