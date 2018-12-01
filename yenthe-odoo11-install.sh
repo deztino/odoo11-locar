@@ -5,7 +5,8 @@
 ##############################################
 ## PRIMERO cd odoo11-locar
 ## COLOCAR sudo chmod +x *
-## LUEGO   sudo -E ./yenthe-instalar-odoo11
+## OJO !!! NO USAR USO para EJECUTAR:
+## LUEGO   ./yenthe-instalar-odoo11.sh
 ################################################################################
 
 ##fixed parameters
