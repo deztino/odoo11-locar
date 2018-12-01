@@ -1,17 +1,17 @@
 echo =============================================
-echo Taller de Odoo 002
-echo Instalando localizacion Argentina
-echo taller-de-odoo-.slack.com Modified by Deztino v0.5
+echo Instalando localizacion Argentina de Adhoc
+echo taller-de-odoo-.slack.com Modified by Deztino v0.6
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
 OE_DBNAME="sanignaciosrl"
+OE_LOCALDIR="odoo11-locar"
 echo =============================================
 echo Activando el entorno virtual de python3
 echo =============================================
-cd /home$OE_HOME/odoo/11
+cd /home$OE_HOME/$OE_LOCALDIR
 source bin/activate
-
+echo -Listo!
 echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo =============================================
@@ -61,14 +61,13 @@ sudo -u postgres dropdb $OE_DBNAME
 echo =============================================
 echo Generando odoo.conf nuevamente con los nuevos modulos
 echo La lista de --addons-path= la generamos con el comando siguiente;
-echo find /home$OE_HOME/odoo/11/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ','
+echo find /home$OE_HOME/$OE_LOCALDIR/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ','
 echo =============================================
 # Lista de es_BO, es_CL, es_PE, es_PY, es_UY, es_MX, es_VE
-cd /home$OE_HOME/odoo/11/
-odoo/odoo-bin -c odoo-$OE_DBNAME.conf -s --stop-after-init --db_host=localhost --db_user=$OE_USER --db_password=$OE_USER --addons-path=/home$OE_HOME/odoo/11/odoo/addons,/home$OE_HOME/odoo/11/sources/account-closing,/home$OE_HOME/odoo/11/sources/account-financial-tools,/home$OE_HOME/odoo/11/sources/account-invoicing,/home$OE_HOME/odoo/11/sources/account-payment,/home$OE_HOME/odoo/11/sources/bank-payment,/home$OE_HOME/odoo/11/sources/currency,/home$OE_HOME/odoo/11/sources/hr-timesheet,/home$OE_HOME/odoo/11/sources/ingadhoc-account-analytic,/home$OE_HOME/odoo/11/sources/ingadhoc-account-financial-tools,/home$OE_HOME/odoo/11/sources/ingadhoc-account-invoicing,/home$OE_HOME/odoo/11/sources/ingadhoc-account-payment,/home$OE_HOME/odoo/11/sources/ingadhoc-aeroo_reports,/home$OE_HOME/odoo/11/sources/ingadhoc-argentina-reporting,/home$OE_HOME/odoo/11/sources/ingadhoc-argentina-sale,/home$OE_HOME/odoo/11/sources/ingadhoc-hr,/home$OE_HOME/odoo/11/sources/ingadhoc-miscellaneous,/home$OE_HOME/odoo/11/sources/ingadhoc-multi-company,/home$OE_HOME/odoo/11/sources/ingadhoc-odoo-argentina,/home$OE_HOME/odoo/11/sources/ingadhoc-partner,/home$OE_HOME/odoo/11/sources/ingadhoc-patches,/home$OE_HOME/odoo/11/sources/ingadhoc-payment,/home$OE_HOME/odoo/11/sources/ingadhoc-product,/home$OE_HOME/odoo/11/sources/ingadhoc-project,/home$OE_HOME/odoo/11/sources/ingadhoc-purchase,/home$OE_HOME/odoo/11/sources/ingadhoc-reporting-engine,/home$OE_HOME/odoo/11/sources/ingadhoc-sale,/home$OE_HOME/odoo/11/sources/ingadhoc-stock,/home$OE_HOME/odoo/11/sources/ingadhoc-website,/home$OE_HOME/odoo/11/sources/oca-purchase-workflow,/home$OE_HOME/odoo/11/sources/oca-sale_workflow,/home$OE_HOME/odoo/11/sources/oca-web,/home$OE_HOME/odoo/11/sources/partner-contact,/home$OE_HOME/odoo/11/sources/product-attribute,/home$OE_HOME/odoo/11/sources/purchase-workflow,/home$OE_HOME/odoo/11/sources/queue,/home$OE_HOME/odoo/11/sources/reporting-engine,/home$OE_HOME/odoo/11/sources/sale-workflow,/home$OE_HOME/odoo/11/sources/server-auth,/home$OE_HOME/odoo/11/sources/server-tools,/home$OE_HOME/odoo/11/sources/server-ux,/home$OE_HOME/odoo/11/sources/social,/home$OE_HOME/odoo/11/sources/stock-logistics-workflow,/home$OE_HOME/odoo/11/sources/web -d $OE_DBNAME --logfile=/home$OE_HOME/odoo/11/odoo-$OE_DBNAME.log --http-port=8069 --longpolling-port=8072 --http-interface=0.0.0.0 --data-dir=/home$OE_HOME/odoo/11/datadir --load-language=es_AR
-
+cd /home$OE_HOME/$OE_LOCALDIR/
+odoo/odoo-bin -c odoo-$OE_DBNAME.conf -s --stop-after-init --db_host=localhost --db_user=$OE_USER --db_password=$OE_USER --addons-path=/home$OE_HOME/$OE_LOCALDIR/odoo/addons,/home$OE_HOME/$OE_LOCALDIR/sources/account-closing,/home$OE_HOME/$OE_LOCALDIR/sources/account-financial-tools,/home$OE_HOME/$OE_LOCALDIR/sources/account-invoicing,/home$OE_HOME/$OE_LOCALDIR/sources/account-payment,/home$OE_HOME/$OE_LOCALDIR/sources/bank-payment,/home$OE_HOME/$OE_LOCALDIR/sources/currency,/home$OE_HOME/$OE_LOCALDIR/sources/hr-timesheet,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-account-analytic,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-account-financial-tools,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-account-invoicing,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-account-payment,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-aeroo_reports,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-argentina-reporting,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-argentina-sale,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-hr,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-miscellaneous,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-multi-company,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-odoo-argentina,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-partner,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-patches,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-payment,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-product,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-project,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-purchase,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-reporting-engine,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-sale,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-stock,/home$OE_HOME/$OE_LOCALDIR/sources/ingadhoc-website,/home$OE_HOME/$OE_LOCALDIR/sources/oca-purchase-workflow,/home$OE_HOME/$OE_LOCALDIR/sources/oca-sale_workflow,/home$OE_HOME/$OE_LOCALDIR/sources/oca-web,/home$OE_HOME/$OE_LOCALDIR/sources/partner-contact,/home$OE_HOME/$OE_LOCALDIR/sources/product-attribute,/home$OE_HOME/$OE_LOCALDIR/sources/purchase-workflow,/home$OE_HOME/$OE_LOCALDIR/sources/queue,/home$OE_HOME/$OE_LOCALDIR/sources/reporting-engine,/home$OE_HOME/$OE_LOCALDIR/sources/sale-workflow,/home$OE_HOME/$OE_LOCALDIR/sources/server-auth,/home$OE_HOME/$OE_LOCALDIR/sources/server-tools,/home$OE_HOME/$OE_LOCALDIR/sources/server-ux,/home$OE_HOME/$OE_LOCALDIR/sources/social,/home$OE_HOME/$OE_LOCALDIR/sources/stock-logistics-workflow,/home$OE_HOME/$OE_LOCALDIR/sources/web -d $OE_DBNAME --logfile=/home$OE_HOME/$OE_LOCALDIR/odoo-$OE_DBNAME.log --http-port=8069 --longpolling-port=8072 --http-interface=0.0.0.0 --data-dir=/home$OE_HOME/$OE_LOCALDIR/datadir --load-language=es_AR
 echo =============================================
 echo Levantamos Odoo v11 Localizacion Argentina
 echo =============================================
-cd /home$OE_HOME/odoo/11/
+cd /home$OE_HOME/$OE_LOCALDIR/
 odoo/odoo-bin -c odoo-$OE_DBNAME.conf &
