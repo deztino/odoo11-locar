@@ -1,6 +1,6 @@
 ## OJO !!! NO USAR SUDO PARA EJECUTAR !!
 ## TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
-echo ================= SCRIPT DE LOCALIZACION deztino V. 1.1 ============================
+echo ================= SCRIPT DE LOCALIZACION deztino V. 1.2 ============================
 echo
 echo 
 echo
@@ -8,6 +8,7 @@ OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
 OE_DBNAME="admin"
 OE_ODOOPATH="/odoo/odoo-server"
+OE_NUEVOPATH=""
 echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo =============================================
@@ -127,8 +128,11 @@ echo Generamos la lista de --addons-path= con el comando siguiente:
 echo =============================================
 echo ~find /home$OE_HOME/odoo11-locar/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ','
 find /home$OE_HOME/odoo11-locar/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ','
-echo Agregado automático del PATH a la configuración de Odoo11-Yenthe /etc/odoo-server.conf
-echo
+#echo Agregado automático del PATH a la configuración de Odoo11-Yenthe /etc/odoo-server.conf
+#echo $OE_NUEVOPATH=$(find /home$OE_HOME/odoo11-locar/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ',')
+#$OE_NUEVOPATH=$(find /home$OE_HOME/odoo11-locar/sources/ -mindepth 1 -maxdepth 1 -type d | sort | tr '\n' ',')
+#$OE_PATHADHOC=${OE_NUEVOPATH::-1}
+#echo Resultado: $OE_NUEVOPATH
 #sudo -u postgres psql
 #ALTER USER odoo WITH PASSWORD 'admin';
 echo =============================================
