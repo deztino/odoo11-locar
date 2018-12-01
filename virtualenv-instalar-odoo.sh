@@ -1,7 +1,7 @@
 echo =============================================
 echo Taller de Odoo 001
 echo Instalando localizacion Latinoamericana
-echo taller-de-odoo-.slack.com modified by deztino v1.0
+echo taller-de-odoo-.slack.com modified by deztino v1.1
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -42,19 +42,20 @@ pip3 install --upgrade pip
 pip3 install --user --upgrade setuptools 
 sudo -H pip3 install --user PyPDF2
 sudo -H pip3 install --user werkzeug
+sudo -H pip3 install --user python-dateutil
 echo -Listo!
 echo =============================================
 echo Clonando e instalando ODOO 
 echo =============================================
 git clone --depth 1 --branch 11.0 --single-branch https://www.github.com/odoo/odoo
-
+echo -Listo!
 echo =============================================
 echo Creando usuario Postgres
 echo =============================================
 sudo -u postgres psql -c "CREATE USER $OE_USER WITH PASSWORD '$OE_USER';"
 sudo -u postgres psql -c "ALTER USER $OE_USER WITH PASSWORD '$OE_USER';"
 sudo -u postgres psql -c "ALTER ROLE $OE_USER WITH CREATEDB;"
-
+echo -Listo!
 echo =============================================
 echo Generando odoo.conf y Configurando
 echo =============================================
@@ -71,3 +72,4 @@ echo =============================================
 echo Levantamos Odoo v11 Localizacion Latinoamericana
 echo =============================================
 odoo/odoo-bin -c odoo.conf &
+echo -Listo! Fin de Script.
