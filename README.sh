@@ -5,6 +5,6 @@ cd odoo11-locar
 /bin/sleep 3
 sudo chmod +x * 
 /bin/sleep 3
-echo ls -ltr
+ls -ltr
 /bin/sleep 3
 sudo -H ./script.sh
