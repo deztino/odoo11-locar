@@ -11,11 +11,17 @@ OE_ODOOPATH="/odoo/odoo-server"
 echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo =============================================
+echo ~git clone https://github.com/OCA/maintainer-quality-tools.git
 git clone https://github.com/OCA/maintainer-quality-tools.git
-echo Dependencias para M2Crypto:
+echo -Listo!
+echo
+echo ___________________________________________________________________________________________________________________
+echo Instalando Dependencias para M2Crypto:
+echo ___________________________________________________________________________________________________________________
 echo ~sudo apt-get install build-essential python3-dev python-dev libssl-dev swig ...
 sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
 echo -Listo!
+echo
 echo ___________________________________________________________________________________________________________________
 echo Instalando M2Crypto ...
 echo ___________________________________________________________________________________________________________________
@@ -45,15 +51,22 @@ sudo -H pip3 install --user git+https://github.com/pysimplesoap/pysimplesoap@sta
 echo -Listo!
 echo
 echo ___________________________________________________________________________________________________________________
-echo Instalar modulo: Request
+echo Instalando modulo: Request ...
 echo ___________________________________________________________________________________________________________________
 echo ~sudo -H pip3 install --user request
 sudo -H pip3 install --user request
 echo -Listo!
+echo
+echo ~sudo apt-get install libcups2-dev 
 sudo apt-get install libcups2-dev
-echo Instalar PyCups
+echo -Listo!
+echo
+echo ___________________________________________________________________________________________________________________
+echo Instalando modulo: PyCups ...
+echo ~pip3 install --user pycups
 pip3 install --user pycups
 echo Listo!
+echo
 echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo ==============================================
