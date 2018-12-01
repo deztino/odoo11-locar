@@ -1,6 +1,6 @@
 ## OJO !!! NO USAR SUDO PARA EJECUTAR !!
 ## TO RUN: sudo -H ./yenthe-odoo11-localizar.sh
-echo ================= SCRIPT DE LOCALIZACION deztino V. 0.7 ============================
+echo ================= SCRIPT DE LOCALIZACION deztino V. 0.8 ============================
 echo
 echo 
 echo
@@ -13,12 +13,16 @@ echo Clonando repositorios localizacion Argentina
 echo =============================================
 git clone https://github.com/OCA/maintainer-quality-tools.git
 echo Dependencias para M2Crypto:
-echo sudo apt-get install build-essential python3-dev python-dev libssl-dev swig ...
+echo ~sudo apt-get install build-essential python3-dev python-dev libssl-dev swig ...
 sudo apt-get install build-essential python3-dev python-dev libssl-dev swig
-echo Listo!
-echo M2Crypto ...
+echo -Listo!
+echo ___________________________________________________________________________________________________________________
+echo Instalando M2Crypto ...
+echo ___________________________________________________________________________________________________________________
+echo ~sudo -H pip3 install --user M2Crypto
 sudo -H pip3 install --user M2Crypto
-echo Listo!
+echo -Listo!
+echo
 pip3 install --user httplib2
 pip3 install --user checksumdir
 pip3 install --user pysftp
@@ -33,13 +37,19 @@ pip3 install --user PyYAML
 pip3 install --user bkcharts
 pip3 install --user tornado
 pip3 install --user zpl2
-echo Instalar PySimpleSoap
-echo sudo -H pip3 install --user git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k ...
+echo ___________________________________________________________________________________________________________________
+echo Instalar PySimpleSoap ...
+echo ___________________________________________________________________________________________________________________
+echo ~sudo -H pip3 install --user git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k ...
 sudo -H pip3 install --user git+https://github.com/pysimplesoap/pysimplesoap@stable_py3k
-echo Listo!
+echo -Listo!
+echo
+echo ___________________________________________________________________________________________________________________
 echo Instalar modulo: Request
+echo ___________________________________________________________________________________________________________________
+echo ~sudo -H pip3 install --user request
 sudo -H pip3 install --user request
-echo Listo!
+echo -Listo!
 sudo apt-get install libcups2-dev
 echo Instalar PyCups
 pip3 install --user pycups
