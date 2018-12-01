@@ -135,3 +135,6 @@ printf "\033[1;31m-Listo! --CHECK WARNINGS--\033[0m\n"
 echo
 pip3 install --user git+https://github.com/OCA/openupgradelib/@master
 printf "\033[1;31mcomment: suda nano git+https://github.com/OCA/openupgradelib/@master\033[0m\n"
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+echo FIN - Dependencias para una instalacion desde Script Yenthe666   -----  VERSION 1.0 ----- TERMINADO
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
