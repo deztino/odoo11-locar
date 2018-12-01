@@ -1,6 +1,6 @@
 echo =============================================
 echo Instalando localizacion Argentina de Adhoc
-echo taller-de-odoo-.slack.com Modified by Deztino v0.6
+echo taller-de-odoo-.slack.com Modified by Deztino v0.7
 echo =============================================
 OE_USER="ubuntu"
 OE_HOME="/$OE_USER"
@@ -9,9 +9,14 @@ OE_LOCALDIR="odoo11-locar"
 echo =============================================
 echo Activando el entorno virtual de python3
 echo =============================================
+echo ~cd /home$OE_HOME/$OE_LOCALDIR
 cd /home$OE_HOME/$OE_LOCALDIR
+echo -Listo!
+echo
+echo ~source bin/activate
 source bin/activate
 echo -Listo!
+echo
 echo =============================================
 echo Clonando repositorios localizacion Argentina
 echo =============================================
